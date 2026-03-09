@@ -21,6 +21,8 @@
     }
 
    aside{
+	display: flex;
+	justify-content: center;
 	color: #212121;
 	background-color: #BBDEFB;
 	flex-grow: 3;
@@ -29,7 +31,16 @@
    section{
 	background-color: #FF4081;
 	color: white;
+	flex-grow: 1;
+	margin: 0.5em;
    }
+
+   @media screen and (max-width: 600px) {
+  div.row{
+                flex-direction: column;
+        }
+}
+
 
    main{
 	background-color: #2196F3;
@@ -61,6 +72,13 @@ div.row{
 	display: flex;
 	flex-direction: column;
 }
+
+@media screen and (max-width: 600px) {
+  div.row{
+                flex-direction: column;
+        }
+}
+
 </style>
 <body>
 
