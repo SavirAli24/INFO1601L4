@@ -8,18 +8,22 @@
 <style>
 * {
      box-sizing: border-box;
-	 margin: 5px;
-	 padding: 1em;
    }
 
-   header, footer{
-	color: white;
-	background-color: #1976D2;
+   header, footer, aside, section, main{
+	padding: 1em;
    }
+
+   header  footer{
+        color: white;
+        background-color:  #1976D2;
+        flex-grow: 1;
+    }
 
    aside{
 	color: #212121;
 	background-color: #BBDEFB;
+	flex-grow: 3;
    }
 
    section{
@@ -30,17 +34,27 @@
    main{
 	background-color: #2196F3;
 	color: white;
+	flex-grow: 7;
    }
 
 body{
 	display: flex;
 	flex-direction: column;
 	background-color: #FFFFFF;
+	height: 100vh;
+    width: 100vw;
+    margin:0;
 }
+
 
 .row{
 	display: flex;
 	flex-direction: row;
+}
+
+
+div.row{
+     flex-grow: 8;
 }
 
 .column{
