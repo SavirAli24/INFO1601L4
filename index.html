@@ -12,13 +12,53 @@
 	 padding: 1em;
    }
 
-   header, footer
+   header, footer{
+	color: white;
+	background-color: #1976D2;
+   }
+
+   aside{
+	color: #212121;
+	background-color: #BBDEFB;
+   }
+
+   section{
+	background-color: #FF4081;
+	color: white;
+   }
+
+   main{
+	background-color: #2196F3;
+	color: white;
+   }
 
 body{
 	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
 }
 </style>
 <body>
+
+	<header>Header</header>
+	<div class="row">
+	<aside class="column">
+		Aside
+		<section>Section1</section>
+		<section>Section2</section>
+	</aside>
+	<main>Main</main>
+	<footer>Footer</footer>
 
 
 
